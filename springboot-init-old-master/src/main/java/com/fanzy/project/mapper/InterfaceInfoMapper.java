@@ -1,7 +1,7 @@
 package com.fanzy.project.mapper;
 
-import com.fanzy.project.model.entity.InterfaceInfo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.fanzy.lingdongapicommon.model.entity.InterfaceInfo;
 
 /**
 * @author Administrator

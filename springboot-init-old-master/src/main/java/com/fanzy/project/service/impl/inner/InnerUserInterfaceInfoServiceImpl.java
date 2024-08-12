@@ -1,4 +1,4 @@
-package com.fanzy.project.service.impl;
+package com.fanzy.project.service.impl.inner;
 
 import com.fanzy.lingdongapicommon.service.InnerUserInterfaceInfoService;
 import com.fanzy.project.service.UserInterfaceInfoService;

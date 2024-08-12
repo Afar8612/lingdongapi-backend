@@ -1,10 +1,10 @@
 package com.fanzy.project.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.fanzy.lingdongapicommon.model.entity.InterfaceInfo;
 import com.fanzy.project.common.ErrorCode;
 import com.fanzy.project.exception.BusinessException;
 import com.fanzy.project.mapper.InterfaceInfoMapper;
-import com.fanzy.project.model.entity.InterfaceInfo;
 import com.fanzy.project.service.InterfaceInfoService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;

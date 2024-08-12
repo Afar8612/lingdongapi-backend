@@ -1,4 +1,4 @@
-package com.fanzy.project.service.impl;
+package com.fanzy.project.service.impl.inner;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.fanzy.lingdongapicommon.model.entity.User;

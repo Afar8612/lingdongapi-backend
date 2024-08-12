@@ -2,6 +2,8 @@ package com.fanzy.project.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.fanzy.lingdongapicommon.model.entity.User;
+import com.fanzy.lingdongapicommon.model.entity.UserInterfaceInfo;
 import com.fanzy.project.annotation.AuthCheck;
 import com.fanzy.project.common.BaseResponse;
 import com.fanzy.project.common.DeleteRequest;
@@ -13,8 +15,6 @@ import com.fanzy.project.exception.BusinessException;
 import com.fanzy.project.model.dto.userinterfaceinfo.UserInterfaceInfoAddRequest;
 import com.fanzy.project.model.dto.userinterfaceinfo.UserInterfaceInfoQueryRequest;
 import com.fanzy.project.model.dto.userinterfaceinfo.UserInterfaceInfoUpdateRequest;
-import com.fanzy.project.model.entity.User;
-import com.fanzy.project.model.entity.UserInterfaceInfo;
 import com.fanzy.project.service.UserInterfaceInfoService;
 import com.fanzy.project.service.UserService;
 import lombok.extern.slf4j.Slf4j;

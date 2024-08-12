@@ -11,6 +11,7 @@ create table if not exists lingdongapi.`interface_info`
     `name` varchar(256) not null comment'名称',
     `description` varchar(256) null comment'描述',
     `url` varchar(512) not null comment'接口地址',
+    `requestParams` text null comment'请求参数',
     `requestHeader` text null comment'请求头',
     `responseHeader` text null comment'响应头',
     `status` int default 0 not null comment'接口状态(0-关闭，1-开启)',
@@ -41,3 +42,17 @@ insert into lingdongapi.`interface_info` (`id`, `name`, `description`, `url`, `r
 insert into lingdongapi.`interface_info` (`id`, `name`, `description`, `url`, `requestHeader`, `responseHeader`, `status`, `method`, `userId`, `createTime`, `updateTime`, `isDelete`) values (18, '蒋明杰', '日照', 'www.jules-hermann.io', 'GvQ6', 'mJ0Fn', 0, 'Dk', 600518674, '2022-08-16 08:47:45', '2022-12-13 02:04:51', 0);
 insert into lingdongapi.`interface_info` (`id`, `name`, `description`, `url`, `requestHeader`, `responseHeader`, `status`, `method`, `userId`, `createTime`, `updateTime`, `isDelete`) values (19, '程天翊', '玉溪', 'www.nelda-beer.info', '4Q3k', 'qqfD', 0, 'K58', 319904, '2022-11-18 08:55:13', '2022-08-03 05:00:50', 0);
 insert into lingdongapi.`interface_info` (`id`, `name`, `description`, `url`, `requestHeader`, `responseHeader`, `status`, `method`, `userId`, `createTime`, `updateTime`, `isDelete`) values (20, '龚熠彤', '岳阳', 'www.ali-wyman.org', 'szii', 'xY', 0, 'v2NGQ', 22137972, '2022-08-05 12:58:23', '2022-08-08 19:15:16', 0);
+
+-- 用户调用接口关系表
+create table if not exists lingdongapi.`user_interface_info`
+(
+    `id` bigint not null auto_increment comment '主键' primary key,
+    `userId` bigint not null comment'调用用户 id',
+    `interfaceInfoId` bigint not null comment'接口 id',
+    `totalNum` int default 0 not null comment'总调用次数',
+    `leftNum` int default 0 not null comment'剩余总调用次数',
+    `status` int default 0 not null comment'0-正常，1-禁用',
+    `createTime` datetime default CURRENT_TIMESTAMP not null comment'创建时间',
+    `updateTime` datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment'更新时间',
+    `isDelete` tinyint default 0 not null comment'是否删除(0-未删，1-已删)'
+)comment '用户调用接口关系';

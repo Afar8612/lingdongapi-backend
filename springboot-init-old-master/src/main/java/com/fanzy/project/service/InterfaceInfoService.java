@@ -1,7 +1,7 @@
 package com.fanzy.project.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.fanzy.project.model.entity.InterfaceInfo;
+import com.fanzy.lingdongapicommon.model.entity.InterfaceInfo;
 
 /**
 * @author Administrator

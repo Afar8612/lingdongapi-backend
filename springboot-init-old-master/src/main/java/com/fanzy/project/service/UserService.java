@@ -2,7 +2,7 @@ package com.fanzy.project.service;
 
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.fanzy.project.model.entity.User;
+import com.fanzy.lingdongapicommon.model.entity.User;
 
 import javax.servlet.http.HttpServletRequest;
 

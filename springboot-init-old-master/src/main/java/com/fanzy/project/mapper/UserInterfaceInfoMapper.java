@@ -1,7 +1,9 @@
 package com.fanzy.project.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.fanzy.project.model.entity.UserInterfaceInfo;
+import com.fanzy.lingdongapicommon.model.entity.UserInterfaceInfo;
+
+import java.util.List;
 
 /**
 * @author Administrator
@@ -10,6 +12,13 @@ import com.fanzy.project.model.entity.UserInterfaceInfo;
 * @Entity com.yupi.project.model.entity.UserInterfaceInfo
 */
 public interface UserInterfaceInfoMapper extends BaseMapper<UserInterfaceInfo> {
+
+    //select interfaceInfoId , sum(totalNum) as totalnum
+    //from user_interface_info
+    //group by interfaceInfoId
+    //order by totalnum desc
+    //limit 3
+    List<UserInterfaceInfo> listTopInvokeInterfaceInfo(int limit);
 
 }
 

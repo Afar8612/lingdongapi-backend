@@ -2,11 +2,12 @@ package com.fanzy.project.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.fanzy.lingdongapicommon.model.entity.UserInterfaceInfo;
+import com.fanzy.lingdongapicommon.service.InnerUserInterfaceInfoService;
 import com.fanzy.project.common.ErrorCode;
 import com.fanzy.project.exception.BusinessException;
-import com.fanzy.project.model.entity.UserInterfaceInfo;
-import com.fanzy.project.service.UserInterfaceInfoService;
 import com.fanzy.project.mapper.UserInterfaceInfoMapper;
+import com.fanzy.project.service.UserInterfaceInfoService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

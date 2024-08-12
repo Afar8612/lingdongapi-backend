@@ -1,6 +1,6 @@
 package com.fanzy.project.service;
 
-import com.fanzy.project.model.entity.User;
+import com.fanzy.lingdongapicommon.model.entity.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

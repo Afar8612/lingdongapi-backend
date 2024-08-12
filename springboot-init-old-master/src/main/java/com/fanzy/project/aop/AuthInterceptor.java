@@ -1,10 +1,10 @@
 package com.fanzy.project.aop;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
+import com.fanzy.lingdongapicommon.model.entity.User;
 import com.fanzy.project.annotation.AuthCheck;
 import com.fanzy.project.common.ErrorCode;
 import com.fanzy.project.exception.BusinessException;
-import com.fanzy.project.model.entity.User;
 import com.fanzy.project.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
